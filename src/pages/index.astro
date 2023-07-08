@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import '@fontsource/ibm-plex-serif/400.css';
+import Clock from '../components/clock';
 ---
 
 <!DOCTYPE html>
@@ -32,6 +33,10 @@ import '@fontsource/ibm-plex-serif/400.css';
 			</ul>
 			<p>All my code is on <a href="https://github.com/Ibinola" target="_blank">GitHub</a></p>
 		</main>
+
+
+		
+		<Clock client:visible/>
 		<Footer />
 	</body>
 </html>
