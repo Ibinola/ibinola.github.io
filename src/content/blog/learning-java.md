@@ -1,10 +1,11 @@
 ---
-title: 'Learning Java'
-description: 'learning java'
-pubDate: 'Jul 13 2023'
+title: "Learning Java"
+description: "learning java"
+pubDate: "Jul 13 2023"
+published: false
 ---
 
-I've decided to pick Java as a new programming language to learn, complementing my role as an intern where I work with Angular and TypeScript. Coming from a JavaScript and React background, the transition to Angular was initially challenging. However, as I immersed myself in its syntax and developed a better mental model, I began to appreciate its power, especially in conjunction with TypeScript. 
+I've decided to pick Java as a new programming language to learn, complementing my role as an intern where I work with Angular and TypeScript. Coming from a JavaScript and React background, the transition to Angular was initially challenging. However, as I immersed myself in its syntax and developed a better mental model, I began to appreciate its power, especially in conjunction with TypeScript.
 
 Interestingly, as I delved deeper into Angular, I noticed certain similarities between Angular and Java. Both embrace the object-oriented paradigm, employing concepts like classes, objects, and inheritance to structure code effectively. Moreover, they share common elements such as decorators, which provide metadata and allow for behavior modification in classes.
 
