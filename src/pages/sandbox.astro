@@ -1,0 +1,77 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, projects } from "../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import "@fontsource/ibm-plex-serif/400.css";
+
+// const posts = (await getCollection("blog")).sort(
+//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+// );
+
+// const projects = (await getCollection('project').sort)
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      ul {
+        list-style-type: none;
+        padding: unset;
+      }
+
+      .projects ul li {
+        list-style-type: none;
+        margin-bottom: 1.6rem;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        padding-bottom: 1.6rem;
+      }
+
+      .projects ul li:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .project a {
+        color: black;
+      }
+
+      .project-name {
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      .project-description {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <ul>
+          {
+            projects.map((project) => (
+              <li>
+                <a href={project.url} target="_blank">
+                  <p class="project-name">
+                    {" "}
+                    {project.name}
+                    <span>&rarr;</span>
+                  </p>
+                  <p class="project-description">{project.description}</p>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
