@@ -38,7 +38,7 @@ function Clock() {
       <span aria-hidden className="select-none">
         ·
       </span>{" "}
-      {getFlagEmoji("NG")} Lagos, Nigeria
+      {getFlagEmoji("NG")} Kaduna, Nigeria
     </span>
   );
 }
