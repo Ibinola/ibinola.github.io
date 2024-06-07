@@ -5,12 +5,25 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import "@fontsource/ibm-plex-serif/400.css";
 import Clock from "../components/clock";
+import { SEO } from "astro-seo";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <SEO
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+      openGraph={{
+        basic: {
+          title: "Michael Ibinola",
+          type: "Frontend Engineer",
+          image:
+            "https://api.dicebear.com/8.x/initials/svg?seed=Michael%20Ibinola",
+        },
+      }}
+    />
   </head>
   <body>
     <Header title={SITE_TITLE} />
