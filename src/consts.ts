@@ -11,4 +11,10 @@ export const projects = [
     description:
       "Discord bot serving random quotes from the tv-show (The Office)",
   },
+  // {
+  //   name: "nanletech",
+  //   url: "https://nanletech.com",
+  //   description:
+  //     "Revamped company's website",
+  // },
 ];
