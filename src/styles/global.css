@@ -29,12 +29,12 @@ a {
 	/* color: #3273dc; */
 	color: black;
 	text-decoration: none;
-	border-bottom: solid 2px gold;
+	border-bottom: solid 2px lime;
 	transition: 0.5s;
 }
 
 a:hover{
-	color: gold;
+	/* color: gold; */
 }
 
 nav a {
