@@ -13,35 +13,35 @@ Nothing fancy, but I enjoyed building this, a bot that responds with a random qu
 
 The first step is to create a discord app. We can do this by going to the [discord developer portal](https://discord.com/developers/docs/quick-start/getting-started) and clicking on the `Create App`
 
-![alt text](/public/create-app.png)
+![alt text](/create-app.png)
 
 We’ll call our app `thatswhatshebot`. Next, we need to set up <i>a bot user, permissions and OAuth.</i>
 
 ### Bot User
 Simply set this up by adding a username and icon.
 
-![bot](/public/bot.png)
+![bot](/bot.png)
 
 Click on "Reset Token" to get your token and save it somewhere safe. Also if you scroll down a bit, you'll find the “MESSAGE CONTENT INTENT” setting, enable it.
 
 ### Permissions
 We need to ensure our app has all the correct permissions needed to function properly, you can adjust the permissions as needed based on additional functionalities your bot may require. For this, I used just two permissions:
 
-![permissions](/public/permissions.png)
+![permissions](/permissions.png)
 
 ### OAuth & Permissions
 
 Then head over to Oauth, can be found on the left side panel, and set scopes and permissions as so:
 
-![scopes](/public/scopes.png)
+![scopes](/scopes.png)
 
 The `bot` scope allows your bot to be invited to servers and the `applications.command` scope allows your bot to create and manage slash commands.
 
-![permissions2](/public/permission2.png)
+![permissions2](/permission2.png)
 
 For permissions we want our bot to be able to read messages, send messages, and use the slash command. After setting all of these up, copy the generated URL from the bottom of the screen. Paste into your browser and grant your bot the necessary permissions, ideally in a private test server.
 
-![generated_url](/public/generatedurl.png)
+![generated_url](/generatedurl.png)
 
 Once this is completed, we can start coding the bot!
 
