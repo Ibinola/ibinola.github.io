@@ -1,11 +1,11 @@
-<!-- ---
-title: 'Linked Lists In Python'
-description: 'linked lists data structure in python'
-pubDate: 'June 19, 2024'
+---
+title: "Linked Lists In Python"
+description: "linked lists data structure in python"
+pubDate: "June 19, 2024"
 draft: true
 ---
 
-Linked lists are collections of nodes that form a linear sequence. Unlike arrays, which are stored in a contiguous block of memory, linked lists allow data to be scattered across different memory locations.
+<!-- Linked lists are collections of nodes that form a linear sequence. Unlike arrays, which are stored in a contiguous block of memory, linked lists allow data to be scattered across different memory locations.
 
 An advantage of linked lists over arrays is their efficiency in insertions and deletions. In linked lists, these operations take constant time, `O(1)` whereas in arrays, inserting or deleting particularly not at the end, can be costly in terms of time complexity due to the need to shift elements.
 
@@ -30,18 +30,18 @@ When we create an instance of our class like this:
 first_node = Node(1)
 ```
 
-It creates an object with properties `value` and `next`. The `value` is whatever was passed(a number, a string, any data type essentially) and a `next` which initially points to nothing.  
+It creates an object with properties `value` and `next`. The `value` is whatever was passed(a number, a string, any data type essentially) and a `next` which initially points to nothing.
 
 ```python
 {
-    value: 1, 
+    value: 1,
     next: None
 }
 ```
 Let's create another instance of the `Node` class and use the first node's `next` property to point to the new node we will create to see how this works:
 
 ```python
-first_node.next = Node(2) 
+first_node.next = Node(2)
 ```
 
 This creates another `Node` object, and we update our first node's `next` property to reference the newly created object:
@@ -82,7 +82,7 @@ Some operations that we will implement on our list are:
         else:
             new_node.next = self.head
             self.head = new_node
-        
+
         self.length+=1
 ```
 In `addFirst`, we create a new node and set it as the head of the list. If the list was empty, we also set it as the tail. The Time Complexity for this is `O(1)`. Since the time to create new node + time to change head reference are both `O1`.
@@ -105,11 +105,11 @@ In `addLast`, we create a new node and point the `tail` next's pointer to the ne
         new_node = Node(data)
         current_node = self.head
         current_index = 0
-        
+
         if current_index == index:
             new_node.next = self.head
             self.head = new_node
-            return 
+            return
 
         while current_index < index - 1:
             current_node = current_node.next
