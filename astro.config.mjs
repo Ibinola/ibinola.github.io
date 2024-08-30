@@ -7,7 +7,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://michaelib.me',
+  site: 'https://ibinola.github.io',
   integrations: [mdx(), sitemap(), react()],
   output: "server",
   adapter: vercel()
